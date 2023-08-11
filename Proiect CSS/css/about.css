@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --verde: rgb(11, 180, 11);
+    --verde-deschis: rgb(16, 240, 16);
+    --mov: rgb(181, 23, 224);
+    --verde-inchis: #315B42;
+    --alb-lapticios: #FBF8F5;
+}
+
+.top-bar {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    background-color: var(--verde);
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+    color: white;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    color: var(--verde-deschis);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 5px;
+    background-color: var(--alb-lapticios);
+    gap: 18px;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 2px 10px grey;
+    background-color: var(--alb-lapticios);
+
+}
+
+.navbar li {
+    border-bottom: 1px solid var(--verde);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav ul ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid var(--verde);
+    gap: 10px;
+}
+
+.Logo a {
+    color: var(--verde);
+}
+
+.Logo a:hover {
+    color: var(--verde-deschis);
+}
+
+.nav li {
+    display: inline;
+    padding-right: 20px;
+    font-size: large;
+}
+
+.nav li a {
+    color: var(--verde);
+    transition: 0.3s;
+
+}
+
+.nav li a:hover {
+    color: var(--verde-deschis);
+    transition: 0.3s;
+}
+
+input:first-of-type {
+    font-size: 15px;
+}
+
+input:nth-child(2) {
+    background-color: var(--verde);
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 40px;
+    border: 1px solid seagreen;
+    transition: 1s;
+}
+
+input:nth-child(2):hover {
+    cursor: pointer;
+    background-color: var(--verde-deschis);
+    color: white;
+    transition: 0.3s;
+}
+
+::placeholder {
+    color: var(--verde);
+}
+
+
+svg {
+    height: 30px;
+    width: 30px;
+    margin: 10px 0px;
+
+}
+
+.about-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/imagini-background/fazanauriu.jpg);
+    background-size: cover;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 5%;
+
+
+}
+
+.shop {
+    height: 50px;
+    width: 130px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: var(--verde-inchis);
+    color: white;
+    transition: 0.3s;
+    border: none;
+
+}
+
+.shop:hover {
+    cursor: pointer;
+    background-color: #316f4a;
+    transition: 0.3s;
+}
+
+.about-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/imagini-background/start.jpg);
+    background-size: cover;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
+}
+
+.sustinere {
+    background-color: #316f4a;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+
+}
+
+.img3 {
+    background-image: url(/img/imagini-background/iepure2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.livrari {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    height: 700px;
+}
+
+.img4 {
+    background-image: url(/img/imagini-background/Romania.png);
+    background-color: white;
+    background-size: cover;
+    width: 350px;
+    height: 270px;
+    border-radius: 12px;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: #316f4a;
+}
+
+@media screen and (min-width:830px) {
+
+    .top-bar {
+        padding-bottom: 15px;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .navbar {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+
+    }
+
+    .navbar ul li {
+        border: none;
+        margin-bottom: 0px;
+
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    svg {
+        margin: 0px 0px;
+    }
+
+    .sustinere {
+        flex-direction: row-reverse;
+    }
+
+    .img3 {
+        margin-right: 50px;
+        width: 400px;
+    }
+
+    .livrari {
+        flex-direction: row;
+    }
+
+    .text3 {
+        width: 50%;
+    }
+
+    .img4 {
+        width: 600px;
+        height: 350px;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+    .about-home {
+        flex-direction: row-reverse;
+        margin-bottom: 250px
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .about-story {
+        flex-direction: row;
+        margin-bottom: 180px;
+    }
+
+    .text2 {
+        width: 100%;
+    }
+
+    .img4 {
+        height: 400px;
+    }
+
+
+}

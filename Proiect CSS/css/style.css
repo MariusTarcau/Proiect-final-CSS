@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root {
+    --verde: rgb(11, 180, 11);
+    --verde-deschis: rgb(16, 240, 16);
+    --mov: rgb(181, 23, 224);
+    --alb-lapticios: #FBF8F5;
+}
+
+.top-bar {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    background-color: var(--verde);
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+    color: white;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    color: var(--verde-deschis);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 5px;
+    background-color: white;
+    gap: 18px;
+    border-bottom: 1px solid white;
+    background-color: var(--alb-lapticios);
+
+
+}
+
+.navbar li {
+    border-bottom: 1px solid var(--verde);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav ul ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid var(--verde);
+    gap: 10px;
+}
+
+.Logo a {
+    color: var(--verde);
+}
+
+.Logo a:hover {
+    color: var(--verde-deschis);
+}
+
+.nav li {
+    display: inline;
+    padding-right: 20px;
+    font-size: large;
+}
+
+.nav li a {
+    color: var(--verde);
+    transition: 0.3s;
+
+}
+
+.nav li a:hover {
+    color: var(--verde-deschis);
+    transition: 0.3s;
+}
+
+input:first-of-type {
+    font-size: 15px;
+}
+
+input:nth-child(2) {
+    background-color: var(--verde);
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 40px;
+    border: 1px solid seagreen;
+    transition: 1s;
+}
+
+input:nth-child(2):hover {
+    cursor: pointer;
+    background-color: var(--verde-deschis);
+    color: white;
+    transition: 0.3s;
+}
+
+::placeholder {
+    color: var(--verde);
+}
+
+.imagine {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/imagini-background/paun-background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.Titlu {
+    color: rgb(255, 166, 0);
+    margin: 50px 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.descriere {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+    gap: 20px;
+}
+
+.animale {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10%;
+    margin-top: 80px;
+}
+
+
+
+.paun,
+.iepure,
+.fazan,
+.peste {
+    height: 400px;
+    width: 100%;
+    background-image: url(/img/imagini-background/paun.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    border: 12px;
+
+}
+
+.paun {
+    background-position: top;
+}
+
+
+.iepure {
+    background-image: url(/img/imagini-background/iepure.jpg);
+}
+
+.fazan {
+    background-image: url(/img/imagini-background/fazan.jpg);
+    background-position: top;
+}
+
+.peste {
+    background-image: url(/img/imagini-background/pesti.jpg);
+}
+
+.Question {
+    color: rgb(255, 166, 0);
+    margin-bottom: 100px;
+}
+
+.servicii {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    gap: 50px;
+    padding: 30px 80px;
+    margin: 100px 0px;
+}
+
+.transport,
+.calitate,
+.siguranta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+    margin: 10px 0px;
+}
+
+.titlu-parteneriat {
+    text-align: center;
+    color: orange;
+}
+
+.parteneriat img {
+    padding: 30px 0px;
+}
+
+.parteneriat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: #316f4a;
+}
+
+.insta {
+    color: orange;
+}
+
+@media screen and (min-width:830px) {
+
+    .top-bar {
+        padding-bottom: 15px;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .navbar {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0px;
+
+
+    }
+
+    .navbar ul li {
+        border: none;
+        margin-bottom: 0px;
+
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .svg {
+        margin: 0px 0px;
+    }
+
+    .animale {
+        columns: 2;
+    }
+
+    .animale img {
+        height: 750px;
+        width: 350px;
+    }
+
+    .servicii {
+        padding: 30px 120px;
+    }
+
+    .descriere p {
+        padding: 0px 100px;
+    }
+
+    .parteneriat {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+}
